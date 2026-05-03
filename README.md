@@ -1,8 +1,8 @@
-### 🌸 Lyra's story arc (Moana movie inspired)
+# 🌸 Lyra's story arc (Moana movie inspired)
 Each break, Lyra learns something new and her XP grows. After every 4 sessions she "levels up" - new dialogue unlocks. She starts as a Novice Warrior and grows into a Legend. The skill she learns is woven into her dialogue — "Guardian, I just learned about recursion. Even quests loop back sometimes…"
 Ready to start coding Phase 1 right now? I'll scaffold the entire working extension - you'll be able to drag the folder into Chrome and see Lyra walk onto your screen today! 🗡️🌸
 
-### 🌸⚔️ Lyra's Quest is BUILT! Here's how to load it right now:
+# 🌸⚔️ Lyra's Quest is BUILT! Here's how to load it right now:
 ## 🚀 Install in Chrome (2 minutes)
 
 1. Download the ZIP above and unzip it to a folder
