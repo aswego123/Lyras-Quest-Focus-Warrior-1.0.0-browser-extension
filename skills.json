@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "category": "coding",
+    "emoji": "⚔️",
+    "title": "Memoization",
+    "lesson": "Cache the results of expensive function calls. If you've solved it before, don't solve it again — a warrior never fights the same battle twice.",
+    "lyra_quote": "Guardian… I learned that a true warrior remembers every battle. Why solve what's already been solved?",
+    "xp": 15
+  },
+  {
+    "id": 2,
+    "category": "coding",
+    "emoji": "🗡️",
+    "title": "Big O Notation",
+    "lesson": "O(1) is instant. O(n) scales with input. O(n²) slows down fast. Always ask: how does this behave at scale?",
+    "lyra_quote": "Speed matters in battle. I now measure my strikes not just by strength — but by how they scale against a thousand foes.",
+    "xp": 20
+  },
+  {
+    "id": 3,
+    "category": "coding",
+    "emoji": "🏹",
+    "title": "Recursion",
+    "lesson": "A function that calls itself. Every recursive problem has a base case (stop!) and a recursive case (keep going). Like a quest within a quest.",
+    "lyra_quote": "Even quests loop back on themselves… until you find the base of the mountain. That's recursion, Guardian.",
+    "xp": 18
+  },
+  {
+    "id": 4,
+    "category": "coding",
+    "emoji": "🌿",
+    "title": "The Closure",
+    "lesson": "A function that remembers the scope it was created in, even after that scope is gone. Inner functions carry the memory of their outer world.",
+    "lyra_quote": "I carry memories of every village I've passed through. Closures do the same — they never forget where they were born.",
+    "xp": 22
+  },
+  {
+    "id": 5,
+    "category": "coding",
+    "emoji": "🔮",
+    "title": "Event Loop",
+    "lesson": "JavaScript is single-threaded but async. The event loop processes one task at a time from the queue. Callbacks wait their turn — no cutting in line.",
+    "lyra_quote": "Patience, Guardian. Even I must wait my turn in battle. The event loop ensures no warrior is overwhelmed at once.",
+    "xp": 25
+  },
+  {
+    "id": 6,
+    "category": "coding",
+    "emoji": "⚡",
+    "title": "Promises & Async/Await",
+    "lesson": "A Promise is a placeholder for a future value. async/await is just clean syntax on top of Promises — same power, more readable.",
+    "lyra_quote": "I promised to return from this quest. Async/await is just how warriors keep their word — cleanly and without chaos.",
+    "xp": 20
+  },
+  {
+    "id": 7,
+    "category": "coding",
+    "emoji": "🏰",
+    "title": "Hash Maps",
+    "lesson": "Store key-value pairs with O(1) lookup. Instead of searching through everything, jump directly to what you need. The most powerful data structure for speed.",
+    "lyra_quote": "Why search a whole forest when you know exactly which tree holds the treasure? Hash maps are a warrior's cheat code.",
+    "xp": 18
+  },
+  {
+    "id": 8,
+    "category": "coding",
+    "emoji": "🌊",
+    "title": "Debounce vs Throttle",
+    "lesson": "Debounce: wait until the user stops typing. Throttle: fire at most once per time window. Both tame high-frequency events.",
+    "lyra_quote": "Not every arrow needs to fly the moment the bow is drawn. Debounce waits for stillness. Throttle paces the battle.",
+    "xp": 20
+  },
+  {
+    "id": 9,
+    "category": "coding",
+    "emoji": "🧬",
+    "title": "The Binary Search",
+    "lesson": "On a sorted array: guess the middle, eliminate half, repeat. O(log n) — incredibly fast. 1 million items? Only 20 guesses needed.",
+    "lyra_quote": "Split the battlefield in two. Eliminate half. Repeat. That's binary search — and it's how I find enemies in record time.",
+    "xp": 22
+  },
+  {
+    "id": 10,
+    "category": "coding",
+    "emoji": "🔗",
+    "title": "Linked Lists",
+    "lesson": "Each node holds data and a pointer to the next. Inserts are O(1) but lookups are O(n). Trade speed for flexibility.",
+    "lyra_quote": "Each step of my journey points to the next. No skipping ahead — but I can always add a new stop without rebuilding the whole path.",
+    "xp": 16
+  },
+  {
+    "id": 11,
+    "category": "coding",
+    "emoji": "🧩",
+    "title": "CSS Grid vs Flexbox",
+    "lesson": "Flexbox: one-dimensional (row OR column). Grid: two-dimensional (rows AND columns). Use both. Grid for layout, Flex for components.",
+    "lyra_quote": "Flexbox is a single battle line. Grid is the whole war map. Know when to use each — that's tactical mastery.",
+    "xp": 15
+  },
+  {
+    "id": 12,
+    "category": "coding",
+    "emoji": "🛡️",
+    "title": "SQL Joins",
+    "lesson": "INNER JOIN: only matching rows. LEFT JOIN: all left rows + matches. RIGHT JOIN: opposite. FULL JOIN: everything. Master these and you master data.",
+    "lyra_quote": "Alliances in battle: some share everything, some share nothing. SQL joins decide who fights together.",
+    "xp": 20
+  },
+  {
+    "id": 13,
+    "category": "coding",
+    "emoji": "🌐",
+    "title": "REST vs GraphQL",
+    "lesson": "REST: fixed endpoints, multiple calls. GraphQL: one endpoint, ask exactly what you need. GraphQL eliminates over-fetching and under-fetching.",
+    "lyra_quote": "REST sends the whole army. GraphQL sends only who's needed. Precision over brute force, always.",
+    "xp": 22
+  },
+  {
+    "id": 14,
+    "category": "coding",
+    "emoji": "🔐",
+    "title": "JWT Tokens",
+    "lesson": "Header.Payload.Signature — a self-contained token. The server doesn't store sessions; the token IS the proof. Stateless and portable.",
+    "lyra_quote": "I carry my own credentials into every kingdom. No one needs to look me up — my token proves who I am.",
+    "xp": 20
+  },
+  {
+    "id": 15,
+    "category": "coding",
+    "emoji": "🧠",
+    "title": "The Virtual DOM",
+    "lesson": "React keeps a lightweight copy of the DOM in memory. It compares old vs new (diffing), then only updates what changed. Blazing fast.",
+    "lyra_quote": "I map the battlefield before the fight. Only charge where things have changed. That's the Virtual DOM — minimal effort, maximum impact.",
+    "xp": 24
+  },
+  {
+    "id": 16,
+    "category": "philosophy",
+    "emoji": "🌸",
+    "title": "Memento Mori",
+    "lesson": "Remember that you will die. Not morbid — liberating. It clarifies what matters. The Stoics used it as fuel for living fully, not for fear.",
+    "lyra_quote": "Every warrior knows the final battle comes. That knowledge? It sharpens every moment before it.",
+    "xp": 20
+  },
+  {
+    "id": 17,
+    "category": "philosophy",
+    "emoji": "🏔️",
+    "title": "Amor Fati",
+    "lesson": "Love your fate. Not just accept it — love it. Whatever happens, including the hard parts, is exactly what was needed for your growth.",
+    "lyra_quote": "Every scar from battle is a chapter of my story. I don't just accept what comes — I love it. It made me who I am.",
+    "xp": 22
+  },
+  {
+    "id": 18,
+    "category": "philosophy",
+    "emoji": "⚖️",
+    "title": "The Dichotomy of Control",
+    "lesson": "Epictetus: some things are in our power (thoughts, actions), some aren't (weather, others' opinions). Focus only on what you control. Obsessing over the rest is suffering.",
+    "lyra_quote": "I cannot control the storm. Only my blade, my breath, my choices. That's Epictetus — and it's how I stay calm in chaos.",
+    "xp": 25
+  },
+  {
+    "id": 19,
+    "category": "philosophy",
+    "emoji": "🔥",
+    "title": "First Principles Thinking",
+    "lesson": "Break problems down to their most fundamental truths. Don't reason by analogy — reason from the ground up. Elon Musk, Aristotle, and Tesla all did this.",
+    "lyra_quote": "Before I cross the bridge, I ask: why is there a bridge? Do I need a bridge at all? Question everything from the ground up.",
+    "xp": 28
+  },
+  {
+    "id": 20,
+    "category": "philosophy",
+    "emoji": "🌊",
+    "title": "Wu Wei — Effortless Action",
+    "lesson": "Taoist concept: act in harmony with the natural flow. Don't force things. The strongest water doesn't push — it flows around. Resistance creates friction.",
+    "lyra_quote": "The most powerful rivers don't smash through mountains. They find the path. Wu Wei is strength through flow.",
+    "xp": 22
+  },
+  {
+    "id": 21,
+    "category": "philosophy",
+    "emoji": "🕯️",
+    "title": "The Socratic Method",
+    "lesson": "Ask questions until you reach truth. Challenge assumptions. The wisest people know what they don't know — and that's where knowledge begins.",
+    "lyra_quote": "I once thought I knew everything about combat. Then a child asked me why I hold my sword that way. Questioning everything is the real weapon.",
+    "xp": 20
+  },
+  {
+    "id": 22,
+    "category": "philosophy",
+    "emoji": "🌿",
+    "title": "Ikigai — Reason for Being",
+    "lesson": "The intersection of: what you love, what you're good at, what the world needs, and what you can be paid for. Find that overlap — that's your ikigai.",
+    "lyra_quote": "My quest only has meaning because it sits where my skill, my passion, the world's need, and my survival all meet. That's ikigai.",
+    "xp": 25
+  },
+  {
+    "id": 23,
+    "category": "philosophy",
+    "emoji": "⚡",
+    "title": "Nietzsche's Will to Power",
+    "lesson": "Not power over others — power over yourself. The drive to grow, create, and overcome. Life's fundamental drive is expansion, not comfort.",
+    "lyra_quote": "Power isn't about conquering others. It's about conquering the version of yourself that wanted to give up.",
+    "xp": 22
+  },
+  {
+    "id": 24,
+    "category": "philosophy",
+    "emoji": "🏛️",
+    "title": "The Ship of Theseus",
+    "lesson": "If you replace every plank of a ship, is it still the same ship? Are you the same person as 10 years ago? Identity is continuous change.",
+    "lyra_quote": "My armor has been repaired a hundred times. My skills rebuilt. Am I still the same warrior? The quest says yes.",
+    "xp": 18
+  },
+  {
+    "id": 25,
+    "category": "philosophy",
+    "emoji": "🌙",
+    "title": "The Beginner's Mind",
+    "lesson": "Zen concept: approach everything as if for the first time. Expertise can make you rigid — beginner's mind keeps you curious, open, and learning.",
+    "lyra_quote": "Every forest is new to me, even forests I've crossed a hundred times. That's how I keep seeing paths others miss.",
+    "xp": 20
+  },
+  {
+    "id": 26,
+    "category": "fitness",
+    "emoji": "🔥",
+    "title": "The 5-Minute Warrior Flow",
+    "lesson": "5 reps of: 10 air squats → 10 push-ups → 30s plank → 5 deep breaths. Resets your nervous system and fires up blood flow to your brain.",
+    "lyra_quote": "A warrior's body is her first weapon. This 5-minute drill is how I restore my battle-readiness. Try it now, Guardian.",
+    "xp": 20
+  },
+  {
+    "id": 27,
+    "category": "fitness",
+    "emoji": "🌬️",
+    "title": "Box Breathing",
+    "lesson": "Inhale 4 counts → Hold 4 → Exhale 4 → Hold 4. Repeat 4 times. Used by Navy SEALs to stay calm under pressure. Takes 90 seconds.",
+    "lyra_quote": "Before every battle, I breathe like the sea — in, hold, out, hold. It slows the heart and sharpens the mind. Do it now.",
+    "xp": 15
+  },
+  {
+    "id": 28,
+    "category": "fitness",
+    "emoji": "🧘",
+    "title": "The Hip Flexor Reset",
+    "lesson": "Sitting tightens hip flexors, which pulls your lower back. Kneel on one knee, push hips forward gently, hold 30s each side. Instant relief.",
+    "lyra_quote": "Hours at a desk are like hours in armor — the body stiffens. Free your hips and your whole posture realigns. Do this now.",
+    "xp": 15
+  },
+  {
+    "id": 29,
+    "category": "fitness",
+    "emoji": "👁️",
+    "title": "The 20-20-20 Eye Rule",
+    "lesson": "Every 20 minutes, look at something 20 feet away for 20 seconds. Reduces digital eye strain and refocuses your vision after screen time.",
+    "lyra_quote": "A warrior who strains her eyes in darkness will miss the dawn attack. Rest your vision now — look far, breathe deep.",
+    "xp": 12
+  },
+  {
+    "id": 30,
+    "category": "fitness",
+    "emoji": "💪",
+    "title": "Desk Push-Up Superset",
+    "lesson": "10 regular → 10 wide grip → 10 diamond. 30 push-ups total, 3 variations. Hits chest, shoulders, and triceps. 2 minutes flat.",
+    "lyra_quote": "Your arms are your tools of creation — keep them strong. Three push-up variations, 2 minutes. I'll wait right here.",
+    "xp": 18
+  },
+  {
+    "id": 31,
+    "category": "fitness",
+    "emoji": "🌊",
+    "title": "Neck & Shoulder Release",
+    "lesson": "Slowly: ear to shoulder (10s each), chin to chest (10s), look left/right (10s each). Releases the tension that headaches live in.",
+    "lyra_quote": "Tension in the shoulders slows the sword arm. Roll them back, drop them down, tilt the head. Release the battle from your neck.",
+    "xp": 12
+  },
+  {
+    "id": 32,
+    "category": "fitness",
+    "emoji": "⚡",
+    "title": "Power Pose Reset",
+    "lesson": "Stand tall, feet shoulder-width, hands on hips, chin up. Hold 2 minutes. Research shows it raises testosterone and lowers cortisol — confidence chemistry.",
+    "lyra_quote": "Stand as if you've already won. The body shapes the mind. Two minutes of the warrior stance changes your entire chemistry.",
+    "xp": 15
+  },
+  {
+    "id": 33,
+    "category": "fitness",
+    "emoji": "🏃",
+    "title": "The Micro Walk",
+    "lesson": "Walk for 5 minutes — no phone. Walking increases creative thinking by 81% (Stanford study) and flushes stress hormones. Outside if possible.",
+    "lyra_quote": "Every great warrior walks between battles. No phone, no noise — just movement and sky. Five minutes. Your best idea is waiting outside.",
+    "xp": 18
+  },
+  {
+    "id": 34,
+    "category": "fitness",
+    "emoji": "🌿",
+    "title": "Wrist & Hand Reset",
+    "lesson": "Shake hands loosely (10s), extend wrists back (hold 10s), fist and spread fingers (5x). Prevents RSI — the warrior's work injury.",
+    "lyra_quote": "Your hands build worlds. Don't let them stiffen into claws. Shake, extend, spread — keep your tools of craft nimble.",
+    "xp": 12
+  },
+  {
+    "id": 35,
+    "category": "wildcard",
+    "emoji": "🌌",
+    "title": "The Overview Effect",
+    "lesson": "Astronauts who see Earth from space report a life-changing shift — borders disappear, problems shrink, connection becomes everything. You can trigger this mentally.",
+    "lyra_quote": "Zoom out far enough and every obstacle becomes a dot on a map. Today's stress? From orbit, it barely registers. Zoom out.",
+    "xp": 20
+  },
+  {
+    "id": 36,
+    "category": "wildcard",
+    "emoji": "🎯",
+    "title": "The 2-Minute Rule",
+    "lesson": "If a task takes less than 2 minutes — do it now, immediately. Don't queue it, don't plan it. The overhead of tracking it costs more than doing it.",
+    "lyra_quote": "Small enemies are best defeated immediately. Don't schedule them — slay them on sight. The 2-minute rule keeps the quest clean.",
+    "xp": 15
+  },
+  {
+    "id": 37,
+    "category": "wildcard",
+    "emoji": "🔮",
+    "title": "Parkinson's Law",
+    "lesson": "Work expands to fill the time available. Give yourself 3 hours for a 1-hour task — it takes 3 hours. Set tighter deadlines intentionally.",
+    "lyra_quote": "A quest with no end date never ends. I always set a sunset deadline. The urgency is the fuel.",
+    "xp": 18
+  },
+  {
+    "id": 38,
+    "category": "wildcard",
+    "emoji": "🌊",
+    "title": "The Feynman Technique",
+    "lesson": "Learn anything in 4 steps: Study → Explain it to a child → Find gaps → Review. If you can't explain it simply, you don't understand it.",
+    "lyra_quote": "I teach my technique to the youngest villagers. If they understand, I understand. Complexity is just incomplete understanding.",
+    "xp": 25
+  },
+  {
+    "id": 39,
+    "category": "wildcard",
+    "emoji": "⭐",
+    "title": "The Starfish Paradox",
+    "lesson": "You can't save everyone — but you can save one. Do the specific, concrete good in front of you. Scale is not the only measure of meaning.",
+    "lyra_quote": "I once tried to save an entire kingdom in one battle. I saved none. Then I saved one child — and everything changed. Start small.",
+    "xp": 20
+  },
+  {
+    "id": 40,
+    "category": "wildcard",
+    "emoji": "🧩",
+    "title": "The 80/20 Rule",
+    "lesson": "80% of results come from 20% of causes. Find your 20% — the high-leverage actions — and protect that time fiercely.",
+    "lyra_quote": "20% of my training created 80% of my combat skill. I found that 20% and did it obsessively. What's your 20%?",
+    "xp": 22
+  },
+  {
+    "id": 41,
+    "category": "wildcard",
+    "emoji": "🌸",
+    "title": "The Zeigarnik Effect",
+    "lesson": "Your brain remembers uncompleted tasks better than completed ones. This is why unfinished work keeps nagging you — and why finishing feels so good.",
+    "lyra_quote": "Unfinished quests haunt warriors in their sleep. The Zeigarnik Effect — your mind clings to open loops. Close them.",
+    "xp": 18
+  },
+  {
+    "id": 42,
+    "category": "wildcard",
+    "emoji": "🏆",
+    "title": "Identity-Based Habits",
+    "lesson": "Don't set goals — set identities. Not 'I want to run a marathon' but 'I am a runner.' Behavior follows self-image. Change who you are, not what you do.",
+    "lyra_quote": "I am not a warrior because I fight. I fight because I am a warrior. Identity first. The actions follow naturally.",
+    "xp": 25
+  },
+  {
+    "id": 43,
+    "category": "wildcard",
+    "emoji": "💡",
+    "title": "Diffuse vs Focused Thinking",
+    "lesson": "Focused mode: concentrated problem-solving. Diffuse mode: relaxed, background processing — this is when breakthroughs happen. Alternating them is the key to creativity.",
+    "lyra_quote": "My best battle strategies come during rest, not during battle. The diffuse mind connects what the focused mind misses.",
+    "xp": 22
+  },
+  {
+    "id": 44,
+    "category": "coding",
+    "emoji": "🛠️",
+    "title": "The SOLID Principles",
+    "lesson": "Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion. Five principles that keep code clean and extensible as it grows.",
+    "lyra_quote": "One warrior, one role. Never overload a single fighter. That's SOLID — each piece does one thing, does it perfectly.",
+    "xp": 28
+  },
+  {
+    "id": 45,
+    "category": "philosophy",
+    "emoji": "🌺",
+    "title": "Wabi-Sabi",
+    "lesson": "Japanese aesthetic of finding beauty in imperfection and impermanence. Cracked pottery, weathered wood, unfinished work — all beautiful. Perfection is sterile.",
+    "lyra_quote": "My armor is dented and my cloak is torn. But that's my story, worn visibly. Wabi-sabi — beauty in the imperfect and real.",
+    "xp": 20
+  },
+  {
+    "id": 46,
+    "category": "fitness",
+    "emoji": "🧠",
+    "title": "Cold Water Face Trick",
+    "lesson": "Splash cold water on your face (or wrists) for 30 seconds. Activates the dive reflex — instantly slows heart rate and sharpens mental focus.",
+    "lyra_quote": "Before my greatest battles I plunge into cold water. It awakens everything. Splash your face now — wake the warrior.",
+    "xp": 15
+  },
+  {
+    "id": 47,
+    "category": "wildcard",
+    "emoji": "🎪",
+    "title": "The Spotlight Effect",
+    "lesson": "You think everyone notices your mistakes — they don't. People are too busy thinking about themselves. You are the only one watching you that closely.",
+    "lyra_quote": "I once stumbled in front of a whole village. Thought they'd never forget. They forgot by sunset. No one watches as closely as you think.",
+    "xp": 18
+  },
+  {
+    "id": 48,
+    "category": "coding",
+    "emoji": "🔧",
+    "title": "Git Rebase vs Merge",
+    "lesson": "Merge: preserves history, creates merge commits. Rebase: rewrites history, creates a clean linear timeline. Use merge for collaboration, rebase for personal cleanup.",
+    "lyra_quote": "History can be preserved as it happened, or rewritten cleanly. Merge keeps the truth. Rebase tells a cleaner story. Choose wisely.",
+    "xp": 22
+  },
+  {
+    "id": 49,
+    "category": "philosophy",
+    "emoji": "🌱",
+    "title": "Kaizen — Continuous Improvement",
+    "lesson": "1% better every day. Not revolution — evolution. Compound tiny improvements over time and the results are extraordinary. Japan built industries on this idea.",
+    "lyra_quote": "I don't try to become the greatest warrior in a day. 1% sharper each morning. That's kaizen — and it's undefeatable.",
+    "xp": 22
+  },
+  {
+    "id": 50,
+    "category": "wildcard",
+    "emoji": "🌀",
+    "title": "The Sunk Cost Fallacy",
+    "lesson": "Past investment is irrelevant to future decisions. Don't keep going because you've already spent time or money — decide based on future value only.",
+    "lyra_quote": "I once kept fighting a losing battle because I'd already fought for hours. A mentor stopped me: 'The past is paid. What does the future cost?' Walk away when needed.",
+    "xp": 20
+  }
+]

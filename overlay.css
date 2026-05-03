@@ -1,0 +1,363 @@
+/* ═══════════════════════════════════════════════════
+   LYRA'S QUEST — Overlay Styles
+   Forest-dark aesthetic with gold accents
+   ═══════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+#lyra-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #0a0d08;
+  font-family: 'Crimson Pro', Georgia, serif;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+#lyra-overlay.visible {
+  opacity: 1;
+}
+
+/* ── Animated forest background ── */
+#lyra-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 80%, rgba(34, 85, 34, 0.25) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 60% at 80% 20%, rgba(20, 60, 20, 0.2) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 40% at 50% 100%, rgba(15, 45, 15, 0.4) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* ── Particle stars ── */
+#lyra-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 10% 15%, rgba(200,220,160,0.6) 0%, transparent 100%),
+    radial-gradient(1px 1px at 25% 8%,  rgba(200,220,160,0.4) 0%, transparent 100%),
+    radial-gradient(1px 1px at 40% 20%, rgba(200,220,160,0.5) 0%, transparent 100%),
+    radial-gradient(1px 1px at 60% 5%,  rgba(200,220,160,0.3) 0%, transparent 100%),
+    radial-gradient(1px 1px at 75% 18%, rgba(200,220,160,0.6) 0%, transparent 100%),
+    radial-gradient(1px 1px at 88% 12%, rgba(200,220,160,0.4) 0%, transparent 100%),
+    radial-gradient(1px 1px at 5%  40%, rgba(200,220,160,0.3) 0%, transparent 100%),
+    radial-gradient(1px 1px at 92% 35%, rgba(200,220,160,0.5) 0%, transparent 100%);
+  pointer-events: none;
+  animation: twinkle 4s ease-in-out infinite alternate;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.6; }
+  to   { opacity: 1; }
+}
+
+/* ── Inner card ── */
+#lyra-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 680px;
+  width: 90%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* ── Character ── */
+#lyra-character {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 30px rgba(120, 200, 120, 0.4));
+  animation: lyra-float 3s ease-in-out infinite;
+  transform-origin: center bottom;
+  transition: all 0.5s ease;
+}
+
+@keyframes lyra-float {
+  0%, 100% { transform: translateY(0px) rotate(-0.5deg); }
+  50%       { transform: translateY(-12px) rotate(0.5deg); }
+}
+
+#lyra-character.walk-in {
+  animation: walk-in 1s cubic-bezier(0.22, 1, 0.36, 1) forwards, lyra-float 3s ease-in-out 1s infinite;
+}
+
+@keyframes walk-in {
+  from { transform: translateX(-120px) scale(0.85); opacity: 0; }
+  to   { transform: translateX(0) scale(1); opacity: 1; }
+}
+
+#lyra-character.exhausted {
+  animation: exhausted 0.6s ease forwards;
+}
+
+@keyframes exhausted {
+  0%  { transform: translateY(0) rotate(0deg); }
+  30% { transform: translateY(-8px) rotate(-3deg); }
+  60% { transform: translateY(4px) rotate(2deg); }
+  100%{ transform: translateY(0) rotate(-1deg) scale(0.96); }
+}
+
+#lyra-character.restored {
+  animation: restored 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes restored {
+  0%   { transform: scale(0.9) rotate(-2deg); }
+  60%  { transform: scale(1.12) rotate(2deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+/* ── Session label ── */
+#lyra-session-label {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #7ab87a;
+  margin-bottom: 8px;
+  opacity: 0.8;
+}
+
+/* ── Quote bubble ── */
+#lyra-quote {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(122, 184, 122, 0.2);
+  border-radius: 16px;
+  padding: 20px 28px;
+  margin: 12px 0 20px;
+  max-width: 520px;
+  position: relative;
+}
+
+#lyra-quote::before {
+  content: '"';
+  position: absolute;
+  top: -8px;
+  left: 20px;
+  font-family: 'Cinzel', serif;
+  font-size: 32px;
+  color: #7ab87a;
+  line-height: 1;
+}
+
+#lyra-quote p {
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.65;
+  color: rgba(220, 235, 210, 0.9);
+  margin: 0;
+}
+
+/* ── Skill card ── */
+#lyra-skill-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(122, 184, 122, 0.25);
+  border-radius: 20px;
+  padding: 24px 32px;
+  max-width: 540px;
+  width: 100%;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+#lyra-skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #7ab87a, #b8d48a, transparent);
+}
+
+#lyra-skill-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+#lyra-skill-emoji {
+  font-size: 28px;
+  line-height: 1;
+}
+
+#lyra-skill-meta {
+  text-align: left;
+}
+
+#lyra-skill-category {
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #7ab87a;
+  margin-bottom: 2px;
+}
+
+#lyra-skill-title {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #d4ead4;
+  line-height: 1.2;
+}
+
+#lyra-skill-lesson {
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(200, 225, 195, 0.85);
+  text-align: left;
+  margin: 0;
+}
+
+#lyra-xp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(122, 184, 122, 0.15);
+  border: 1px solid rgba(122, 184, 122, 0.35);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  color: #7ab87a;
+  margin-top: 14px;
+}
+
+/* ── Timer ring ── */
+#lyra-timer-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#lyra-timer-svg {
+  width: 110px;
+  height: 110px;
+}
+
+#lyra-timer-track {
+  fill: none;
+  stroke: rgba(122, 184, 122, 0.1);
+  stroke-width: 5;
+}
+
+#lyra-timer-ring {
+  fill: none;
+  stroke: #7ab87a;
+  stroke-width: 5;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 55px 55px;
+  transition: stroke-dashoffset 1s linear;
+}
+
+#lyra-timer-text {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  font-weight: 600;
+  fill: #d4ead4;
+  text-anchor: middle;
+  dominant-baseline: central;
+}
+
+#lyra-timer-sub {
+  font-size: 10px;
+  letter-spacing: 2px;
+  fill: #7ab87a;
+  text-anchor: middle;
+}
+
+/* ── CTA Button ── */
+#lyra-btn {
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #0a0d08;
+  background: #7ab87a;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 36px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+#lyra-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0);
+  transition: background 0.2s;
+}
+
+#lyra-btn:hover { transform: translateY(-2px); background: #8fcf8f; box-shadow: 0 8px 30px rgba(122,184,122,0.4); }
+#lyra-btn:active { transform: translateY(0); }
+#lyra-btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+/* ── Level up banner ── */
+#lyra-levelup {
+  display: none;
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #b8860b, #daa520, #b8860b);
+  border-radius: 40px;
+  padding: 10px 28px;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #0a0d08;
+  white-space: nowrap;
+  z-index: 10;
+  animation: level-up-pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+#lyra-levelup.show { display: block; }
+
+@keyframes level-up-pop {
+  from { transform: translateX(-50%) scale(0.5); opacity: 0; }
+  to   { transform: translateX(-50%) scale(1); opacity: 1; }
+}
+
+/* ── XP bar ── */
+#lyra-xp-bar-wrap {
+  width: 200px;
+  height: 4px;
+  background: rgba(122,184,122,0.15);
+  border-radius: 2px;
+  margin: 8px auto 0;
+  overflow: hidden;
+}
+
+#lyra-xp-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #7ab87a, #b8d48a);
+  border-radius: 2px;
+  transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ── Responsiveness ── */
+@media (max-width: 600px) {
+  #lyra-character { width: 160px; height: 160px; }
+  #lyra-skill-card { padding: 18px 20px; }
+  #lyra-quote p { font-size: 15px; }
+}
